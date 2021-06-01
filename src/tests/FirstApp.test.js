@@ -18,4 +18,11 @@ describe('Test in <FirstApp /> component', () => {
     const wrapper = shallow(<FirstApp saludo={saludo} />);
     expect(wrapper).toMatchSnapshot();
   });
+  test('should show the subtitle sent by the properties', () => {
+    const saludo = 'Hola, soy Goku';
+    const subtitulo = 'Soy un subtitulo';
+    const wrapper = shallow(<FirstApp saludo={saludo} subtitulo={subtitulo} />);
+    const textoParrafo = wrapper.find('p').text();
+    expect(textoParrafo).toBe(subtitulo);
+  });
 });
