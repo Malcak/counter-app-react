@@ -11,16 +11,19 @@ exports[`Test in <CounterApp /> component should display the <CounterApp /> comp
     0
   </h2>
   <button
+    id="add"
     onClick={[Function]}
   >
     +1
   </button>
   <button
+    id="reset"
     onClick={[Function]}
   >
     reset
   </button>
   <button
+    id="subtract"
     onClick={[Function]}
   >
     -1
